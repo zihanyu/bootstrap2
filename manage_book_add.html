@@ -1,0 +1,113 @@
+<html>
+<head>
+	<title>客户关系管理系统-添加文档</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/web.css" />
+<body>
+
+	<div class="container manback">
+		<div class="row manback">
+			<div class="col-md-12 col-xs-12">
+				<nav class="navbar navbar-default navbar-inverse">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="">客户关系管理系统</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li ><a href="#">首页</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">任务管理<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="manage_tab_add.html">任务分配</a></li>
+								<li><a href="manage_tab_list.html">任务管理</a></li>
+								<li><a href="#"></a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">文档管理<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="manage_book_add.html">添加文档</a></li>
+								<li><a href="manage_book_list.html">管理文档</a></li>
+								<li><a href="#"></a></li>
+							</ul>
+						</li>
+						<li><a href="manage_tab_list.html">项目管理</a></li>
+						<li><a href="manage_password_edit.html">密码管理</a></li>
+					</ul>
+
+					</form>
+					<a class="glyphicon glyphicon-user pull-right">管理员</a>
+					<a  class="glyphicon glyphicon-user pull-right" href="#">退出</a>
+				</nav>
+			</div>
+		</div>
+
+		<div class="row ">
+			<div class="col-md-3 col-xs-3" ><ul class="nav nav-list">
+
+				<li class="active">
+					<a href="manage_book_add.html">添加文档</a>
+				</li>
+				<li>
+					<a href="manage_book_list.html">管理文档</a>
+				</li>
+
+
+			</ul>
+			</div>
+			<div class="col-md-9 col-xs-9">
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">添加文档</h3>
+					</div>
+					<div class="panel-body">
+					  <form id="form1" name="form1" method="post" action="" class="form-group">
+					    <table>
+					      <tr>
+					        <td width="28%">文档类型</td>
+					        <td width="72%"><label>
+								<select name="select2" class="form-control">
+									<option>技术文档</option>
+									<option>设计文档</option>
+								</select>
+					          </label></td>
+				          </tr>
+							<tr>
+								<td>文档标题</td>
+								<td><label>
+									<input type="text" name="textfield" class="form-control" />
+								</label></td>
+							</tr>
+					      <tr>
+					        <td>文档内容</td>
+					        <td><label>
+								<textarea name="textfield2" cols="50" rows="10" class="form-control"></textarea>
+					          </label></td>
+				          </tr>
+					      <tr>
+					        <td>附件资料</td>
+							  <td><label>
+								  <label for="exampleInputFile">File input</label>
+								  <input type="file" id="exampleInputFile">
+							  </label></td>
+							</tr>
+
+
+							<tr>
+					        <td>&nbsp;</td>
+					        <td><input type="submit" name="Submit" value="提交" class="btn btn-default"/></td>
+				          </tr>
+				        </table>
+				      </form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

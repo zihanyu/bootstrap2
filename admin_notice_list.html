@@ -1,0 +1,124 @@
+<html>
+<head>
+	<title>客户关系管理系统</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/web.css" />
+	<style type="text/css">
+	.STYLE1 {font-size: 12px}
+.STYLE4 {	font-size: 12px;
+	color: #1F4A65;
+	font-weight: bold;
+}
+    </style>
+</head>
+<body>
+
+	<div class="container back">
+		<div class="row back">
+			<div class="col-md-12 col-xs-12">
+				<nav class="navbar navbar-default navbar-inverse">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="">客户关系管理系统</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li ><a href="#">首页</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">用户管理<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="admin_user_add.html">添加用户</a></li>
+								<li><a href="admin_user_list.html">管理用户</a></li>
+								<li><a href="#"></a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">公告管理<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="admin_notice_add.html">添加文档</a></li>
+								<li><a href="admin_notice_list.html">管理文档</a></li>
+								<li><a href="#"></a></li>
+							</ul>
+						</li>
+						<li><a href="admin_tab_list.html">项目管理</a></li>
+						<li><a href="admin_password_edit.html">密码管理</a></li>
+					</ul>
+
+					</form>
+					<a class="glyphicon glyphicon-user pull-right">管理员</a>
+					<a  class="glyphicon glyphicon-user pull-right" href="#">退出</a>
+				</nav>
+			</div>
+		</div>
+		<div class="row ">
+			<div class="col-md-3 col-xs-3" ><ul class="nav nav-list">
+
+				<li class="active">
+					<a href="admin_notice_add.html">添加公告</a>
+				</li>
+				<li>
+					<a href="admin_notice_list.html">公告管理</a>
+				</li>
+
+
+			</ul>
+			</div>
+			<div class="col-md-9 col-xs-9">
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">公告管理</h3>
+					</div>
+					<div class="panel-body">
+					  <form name="form1" method="post" action="">
+					    <table class="table table-condensed">
+					      <tr>
+					        <th width="8%">选择</span></th>
+					        <th width="8%">编号</th>
+					        <th width="27%">标题</th>
+					        <th width="14%">级别</th>
+					        <th width="18%">创建日期</th>
+					        <th width="25%">操作</th>
+				          </tr>
+					      <tr>
+					        <td><span class="STYLE1">
+					          <input name="checkbox" type="checkbox" />
+					        </span></td>
+					        <td>1</td>
+					        <td>周一开会</td>
+					        <td>经理</td>
+					        <td>2015-11-1</td>
+					        <td><button type="button" class="btn btn-primary">修改</button>&nbsp;<button type="button" class="btn btn-danger">删除</button></td>
+				          </tr>
+					      <tr>
+					        <td><span class="STYLE1">
+					          <input name="checkbox2" type="checkbox" />
+					        </span></td>
+					        <td>2</td>
+					        <td>新产品发布文档</td>
+					        <td>员工</td>
+					        <td>2015-10-1</td>
+					        <td><button type="button" class="btn btn-primary">修改</button>&nbsp;<button type="button" class="btn btn-danger">删除</button></td>
+				          </tr>
+				        </table>
+				      </form>
+                      <ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li class="active"><a href="#">1</a></li>
+  <li class="disabled"><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
+
+				  </div>
+				</div>
+			</div>
+	  </div>
+
+	</div>
+</body>
+</html>

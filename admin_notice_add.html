@@ -1,0 +1,107 @@
+<html>
+<head>
+	<title>客户关系管理系统-添加公告</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/web.css" />
+</head>
+<body>
+
+	<div class="container back">
+		<div class="row back">
+			<div class="col-md-12 col-xs-12">
+				<nav class="navbar navbar-default navbar-inverse">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">客户关系管理系统</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li ><a href="#">首页</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">用户管理<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="admin_user_add.html">添加用户</a></li>
+								<li><a href="admin_user_list.html">管理用户</a></li>
+								<li><a href="#"></a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">公告管理<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="admin_notice_add.html">添加文档</a></li>
+								<li><a href="admin_notice_list.html">管理文档</a></li>
+								<li><a href="#"></a></li>
+							</ul>
+						</li>
+						<li><a href="admin_tab_list.html">项目管理</a></li>
+						<li><a href="admin_password_edit.html">密码管理</a></li>
+					</ul>
+
+					</form>
+					<a class="glyphicon glyphicon-user pull-right">管理员</a>
+					<a  class="glyphicon glyphicon-user pull-right" href="#">退出</a>
+				</nav>
+			</div>
+		</div>
+
+		<!-- 主内容区域 -->
+		<div class="row ">
+			<div class="col-md-3 col-xs-3" ><ul class="nav nav-list">
+
+				<li class="active">
+					<a href="admin_notice_add.html">添加公告</a>
+				</li>
+				<li>
+					<a href="admin_notice_list.html">公告管理</a>
+				</li>
+
+
+			</ul>
+			</div>
+			<div class="col-md-9 col-xs-9">
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">添加公告</h3>
+					</div>
+					<div class="panel-body">
+					  <form id="form1" name="form1" method="post" action="" class="form-group">
+					    <table>
+					      <tr>
+					        <td width="10%">公告名称</td>
+					        <td width="98%"><label>
+					          <input type="text" name="textfield" class="form-control" />
+					        </label></td>
+				          </tr>
+					      <tr>
+					        <td>公告内容</td>
+					        <td><label>
+					          <textarea name="textfield2" cols="100" rows="10"  class="form-control"></textarea>
+					          </label></td>
+				          </tr>
+					      <tr>
+					        <td>选择权限</td>
+					        <td><label>
+					          <select name="select"  class="form-control">
+					            <option selected="selected">全部</option>
+					            <option>部门经理</option>
+					            <option>员工</option>
+				              </select>
+					        </label></td>
+				          </tr>
+					      <tr>
+					        <td>&nbsp;</td>
+					        <td><input type="submit" name="Submit"  class="btn btn-default" value="提交" /></td>
+				          </tr>
+				        </table>
+					  </form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
